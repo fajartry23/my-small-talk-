@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Small Talk ♡</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Background Floating Particles Container -->
+  <div id="particles-container"></div>
+
+  <!-- 1. LOADING SCREEN -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="beating-heart">❤️</div>
+      <div class="strawberry-icon">🍓</div>
+      <p class="loading-text">Loading Memories...</p>
+    </div>
+  </div>
+
+  <!-- 2. COVER PAGE -->
+  <section id="cover-page" class="active">
+    <div class="glass-card text-center">
+      <p class="sub-title">For Someone Who Means A Lot To Me</p>
+      <h1 class="main-title">♡ My Small Talk ♡</h1>
+      <p class="quote">"Some words are easier written than spoken."</p>
+      <button id="btn-open-letter" class="btn-glow">💌 Open Letter</button>
+    </div>
+  </section>
+
+  <!-- 3. ANIMASI AMPLOP MODAL -->
+  <div id="envelope-modal" class="modal hidden">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="flap"></div>
+        <div class="pocket"></div>
+        <div class="letter">
+          <p>I have something to tell you...</p>
+          <button id="btn-to-password" class="btn-small">Open 🌸</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. PASSWORD PAGE MODAL -->
+  <div id="password-modal" class="modal hidden">
+    <div class="glass-card text-center">
+      <div class="lock-icon">🔒</div>
+      <h2>Private Letter</h2>
+      <p>Masukkan password</p>
+      <input type="password" id="password-input" placeholder="********" />
+      <p id="password-error" class="error-msg hidden">🍓 Hmm... Coba lagi ya</p>
+      <button id="btn-submit-pass" class="btn-pink">Masuk ♡</button>
+    </div>
+  </div>
+
+  <!-- MAIN LETTER CONTENT (Tampil setelah password benar) -->
+  <div id="main-content" class="hidden">
+
+    <!-- 5. MUSIC PLAYER FLOATING -->
+    <div class="music-player-floating">
+      <button id="music-toggle" class="btn-music">🎵 Music</button>
+      <audio id="bg-music" src="music/bgm.mp3" loop></audio>
+    </div>
+
+    <!-- 10. STRAWBERRY EASTER EGG -->
+    <div id="strawberry-egg" class="floating-egg" title="Klik aku!">🍓</div>
+
+    <!-- 6. BAGIAN SURAT (BUKU DIGITAL) -->
+    <main class="letter-container">
+
+      <!-- BAB 1 -->
+      <section class="chapter glass-card scroll-reveal">
+        <span class="chapter-tag">Chapter 1</span>
+        <div class="photo-frame">
+          <img src="images/foto1.jpeg" alt="Foto 1" class="clickable-photo" />
+        </div>
+        <h3 class="chapter-title">My Small Talk</h3>
+        <p class="chapter-text">
+          Barangkali, mengagumi seseorang memang tidak pernah membutuhkan alasan yang cukup. Sebab jika benar segala sesuatu harus memiliki sebab, aku tak akan pernah mampu menjelaskan mengapa semesta terasa sedikit lebih indah setiap kali namamu melintas di dalam pikiranku.
+        </p>
+        <p class="chapter-text">
+          Mungkin semuanya bermula dari hal yang begitu sederhana. Dari caramu menyambut hari tanpa banyak mengeluh. Dari caramu memperlakukan orang lain dengan lembut, bahkan ketika dunia tidak selalu berlaku serupa kepadamu. Atau mungkin dari matamu, yang entah bagaimana selalu berhasil membuatku merasa bahwa hidup tidak sedang terburu-buru.
+        </p>
+        <p class="chapter-text">
+          Aku tidak sedang mencari kesempurnaan di dalam dirimu. Sebab yang membuatku tinggal bukanlah sesuatu yang sempurna. Melainkan caramu menjadi manusia. Aku mengagumi caramu tertawa, seolah tak pernah ada hari yang cukup buruk untuk merampas cahaya dari wajahmu. Aku mengagumi caramu diam, sebab bahkan keheninganmu terasa lebih jujur daripada banyak percakapan yang pernah kudengar. Aku mengagumi caramu hadir, tanpa pernah merasa perlu menjadi siapa pun selain dirimu sendiri.
+        </p>
+        <p class="chapter-text">
+          Lucu sekali dunia terus mengajarkan kita untuk mencari seseorang yang luar biasa. Namun tak ada yang memberitahuku, bahwa seseorang bisa menjadi begitu luar biasa hanya karena ia berhasil membuat hati orang lain merasa tenang. Sejak mengenalmu, aku mulai memahami bahwa rasa kagum bukanlah keinginan untuk memiliki. Ia lebih menyerupai doa.
+        </p>
+        <p class="chapter-text">
+          Doa yang diam-diam berharap semoga hidup selalu memperlakukanmu dengan lembut. Semoga langkahmu selalu dipertemukan dengan hal-hal baik. Semoga setiap luka yang pernah kau sembunyikan perlahan menemukan cara untuk sembuh.
+        </p>
+        <p class="chapter-text">
+          Barangkali, mengagumimu memang tak pernah dimaksudkan untuk berakhir menjadi milik. Sebab beberapa rasa diciptakan hanya untuk tumbuh dengan tenang, tanpa pernah meminta balasan. Maka jangan khawatir. Aku tidak akan memintamu tinggal. Aku hanya berharap, selama semesta masih mengizinkan namamu hadir di dalam hariku, izinkan pula aku mengagumimu dengan cara yang paling sederhana. Sampai akhirnya waktu memutuskan bahwa hari itu telah selesai.
+        </p>
+      </section>
+
+      <!-- BAB 2 -->
+      <section class="chapter glass-card scroll-reveal">
+        <span class="chapter-tag">Chapter 2</span>
+        <div class="photo-frame">
+          <img src="images/foto2.jpeg" alt="Foto 2" class="clickable-photo" />
+        </div>
+        <p class="chapter-text">
+          Lucunya, dari sekian banyak hal yang pernah kuimpikan tentang masa depan, yang paling sering membuatku takut justru sesuatu yang belum terjadi. Aku takut waktu mengajarkan kita untuk terbiasa tanpa saling menyapa, takut kesibukan mencuri hangat yang selama ini kita rawat, takut semesta terlalu gemar menguji dua hati yang sedang berusaha saling menjaga. Maka setiap kali kecemasan itu datang tanpa permisi, aku selalu kembali pada satu pertanyaan yang kusimpan seperti doa paling rahasia, <strong>"kita akan baik-baik saja, bukan?"</strong> Sebab ada kalanya seseorang tidak membutuhkan kepastian tentang esok, ia hanya ingin tahu bahwa tangan yang digenggam hari ini tidak akan memilih pergi saat jalan mulai terasa sulit.
+        </p>
+        <p class="chapter-text">
+          Barangkali cinta memang bukan tentang siapa yang paling pandai mengucapkan "selamanya", melainkan siapa yang tetap memilih tinggal ketika segala sesuatu terasa tidak semudah awalnya.
+        </p>
+        <p class="chapter-text">
+          Sebab bunga pun tidak mekar sepanjang musim, langit tidak selalu biru, dan laut tidak selamanya tenang. Namun bukankah semuanya tetap indah karena mereka tidak menyerah menjadi dirinya? Begitu pula kita. Mungkin akan ada hari ketika air mata lebih fasih daripada tawa, ketika lelah membuat kita lupa bagaimana caranya saling memahami. Tetapi semoga, di atas segala ego yang ingin dimenangkan, kita tetap memilih untuk duduk bersebelahan, mengingat alasan mengapa sejak awal kita tidak pernah ingin berjalan sendirian.
+        </p>
+        <p class="chapter-text">
+          Jika suatu hari nanti dunia kembali menguji seberapa kuat kita bertahan, jangan biarkan rasa takut lebih keras suaranya daripada cinta yang telah kita bangun perlahan. Dekap aku sedikit lebih erat, tatap aku sedikit lebih lama, lalu yakinkan aku tanpa perlu banyak kata bahwa badai ini hanya sedang lewat. Karena pada akhirnya, aku tidak sedang meminta hidup yang tanpa luka.
+        </p>
+        <p class="chapter-text">
+          Aku hanya berharap, di setiap musim yang datang silih berganti, kita tetap menjadi dua hati yang saling pulang. Dan ketika aku kembali berbisik, <em>"kita akan baik-baik saja, bukan?"</em> semoga semesta menjawabnya lewat caramu yang tak pernah lelah memilih kita.
+        </p>
+      </section>
+
+      <!-- BAB 3 -->
+      <section class="chapter glass-card scroll-reveal">
+        <span class="chapter-tag">Chapter 3</span>
+        <div class="photo-frame">
+          <img src="images/foto3.jpeg" alt="Foto 3" class="clickable-photo" />
+        </div>
+        <p class="chapter-text">
+          Biar mereka berlomba mengagumi paras dan megahmu. Di hadapanku, kau tak perlu berpura-pura utuh. Sebab cinta yang kusemai bukan tentang menyukai sempurnamu, melainkan tentang merangkul setiap retak yang kau sembunyikan dari dunia.
+        </p>
+        <p class="chapter-text">
+          Dunia kerap kali teramat dangkal dan penuh tawar-menawar. Orang-orang hanya sudi singgah saat bungamu mekar wangi, lalu tergesa beranjak pergi tatkala kelopaknya memudar dan layu. Namun, sayang, aku tak pernah sudi mencintaimu dengan cara yang sesempit itu. Bila merayakan bahagiamu adalah hal yang mudah bagi siapa saja, maka memeluk lukamu adalah takdir yang paling ingin kupeluk erat.
+        </p>
+        <p class="chapter-text highlight-text">
+          "Jika semuanya hanya mencintai indahmu, maka berikan aku cacatmu, agar kucintai ia dengan seluruhku."
+        </p>
+        <p class="chapter-text">
+          Sebab, sayang, aku tak sedang berburu kesempurnaan. Lempar saja kemari gelisah yang selalu kausembunyikan di balik dinding kamar, atau retak-retak di jiwamu yang tak pernah berani kauperlihatkan pada siapa pun. Biarkan aku menjadi penampung paling teduh bagi segala kurangmu, tempat di mana kau bisa berhenti menjadi kuat dan bertelanjang luka tanpa rasa takut.
+        </p>
+        <p class="chapter-text">
+          Aku tak butuh dirimu yang berkilau untuk terus bertahan. Bagiku, setiap cela dan cacatmu adalah bab paling jujur dari dirimu yang justru membuatku kian jatuh dan tenggelam. Maka bila suatu hari kau merasa hancur dan tak lagi berharga di mata dunia, kembalilah padaku.
+        </p>
+        <p class="chapter-text">
+          Jangan rapikan tangismu, jangan pula kausembunyikan patahmu. Sebab ketika orang lain bertepuk tangan hanya untuk megahmu, aku di sini siap mendekap retakmu sampai kau sadar bahwa kau tetaplah satu-satunya utuh yang kucintai.
+        </p>
+      </section>
+
+      <!-- BAB 4 -->
+      <section class="chapter glass-card scroll-reveal">
+        <span class="chapter-tag">Chapter 4</span>
+        <div class="photo-frame">
+          <img src="images/foto4.jpeg" alt="Foto 4" class="clickable-photo" />
+        </div>
+        <p class="chapter-text">
+          Pagi ini terlintas terpikir... Ada jenis nyaman yang lahir dari sekadar melihatmu dari jauh. Seperti menikmati rintik gerimis dari balik jendela kaca—indah, menenangkan, tanpa pernah ada keinginan untuk keluar dan ikut basah. Mengetahui bahwa kau ada di dunia ini dan sedang baik-baik saja, sudah cukup untuk membuat hariku terasa genap.
+        </p>
+        <p class="chapter-text">
+          Aku suka bagaimana caramu tertawa saat membahas hal-hal kecil, atau bagaimana seriusnya tatapanmu ketika sedang fokus pada sesuatu. Semua detail itu kusimpan sendiri, bukan untuk dijadikan alasan agar kau menoleh, melainkan sebagai galeri kecil di kepala yang selalu berhasil mengusir sepi dan gundahku.
+        </p>
+        <p class="chapter-text highlight-text">
+          Kau tidak perlu tahu seberapa sering namamu terselip di antara baris doaku. Biarlah itu menjadi urusanku dengan semesta.
+        </p>
+        <p class="chapter-text">
+          Tugasmu hanya satu: teruslah berjalan dengan binar mata yang sama, tanpa perlu terbebani oleh perasaan asing yang tumbuh diam-diam di sekitarmu. Aku tidak pernah merasa kekurangan walau tak kau dekap. Rasa ini sudah selesai dengan dirinya sendiri sejak pertama kali ia tumbuh. Mencintaimu bagiku adalah tentang memberi ruang, membiarkanmu terbang bebas ke mana pun kau mau, sementara aku cukup menjadi langit yang menyembunyikan kekaguman ini tanpa batas.
+        </p>
+        <p class="chapter-text">
+          Aku akan selalu memberikan ruang, entah ruang untuk bercerita, mengeluh, mencurahkan perasaan, dan mungkin hanya sekedar lelucon aneh. Kuharap kamu juga terus memberikan aku ruang untuk setiap kata "maaf"-ku, dan usahaku untuk menjadi orang yang pantas untukmu. Dan jikalau memang semua terasa berat dan menyesakkan untukmu, aku hanya ingin kau tahu berapa banyak kata "mu" di setiap tulisan yang kutulis ini.
+        </p>
+      </section>
+
+      <!-- 15. MEMORY BOX SECTION -->
+      <section class="memory-box-section scroll-reveal text-center">
+        <div class="glass-card">
+          <p class="sub-title">✨ A Special Surprise ✨</p>
+          <h3>Memory Box</h3>
+          <p class="chapter-text text-center">
+            Ada satu kenangan kecil yang tersimpan di sini...
+          </p>
+          <!-- Tombol Kotak Kado -->
+          <button id="btn-memory-box" class="gift-box-btn">
+            🎁 <br />
+            <span>Klik untuk Buka</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- MODAL POPUP VIDEO MEMORY -->
+      <div id="video-modal" class="modal hidden">
+        <div class="glass-card text-center video-card">
+          <span id="close-video" class="close-btn">&times;</span>
+          <h3 class="chapter-title">Our Precious Moment ❤️</h3>
+          <div class="video-wrapper">
+            <video id="memory-video" controls>
+              <source src="videos/memory.mp4" type="video/mp4" />
+              Browser kamu tidak mendukung pemutaran video.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. ENDING PAGE -->
+      <section class="ending-page scroll-reveal text-center">
+        <h2>Thank You</h2>
+        <div class="heart-divider">♡</div>
+        <p class="ending-quote">For being a beautiful part of my little story.</p>
+        <div class="ending-icons">🍓 🌸</div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- 7. PHOTO LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="modal hidden">
+    <span id="close-lightbox" class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Full View" />
+  </div>
+
+  <!-- EASTER EGG POPUP -->
+  <div id="easter-modal" class="modal hidden">
+    <div class="glass-card text-center">
+      <div class="big-icon">🍓</div>
+      <p class="easter-text">You're the sweetest<br />part of my story ❤️</p>
+      <button id="close-easter" class="btn-pink">Tutup</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
